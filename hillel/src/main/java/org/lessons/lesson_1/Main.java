@@ -1,4 +1,4 @@
-package app;
+package org.lessons.lesson_1;
 
 public class Main {
 
