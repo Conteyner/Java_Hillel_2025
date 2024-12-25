@@ -12,23 +12,27 @@ public class Main {
         System.out.println("First of all: what do you want to convert?\n1.Miles --> Km\n2.Km --> Miles");
         int choice = sc.nextInt();
         switch (choice) {
-            case 1: {
-                System.out.println("Please, enter miles");
+            case 1 -> {
+                System.out.println("Enter miles: ");
                 double miles = sc.nextDouble();
-                double km = miles * CONV_D;
-                System.out.println("Converted successfully - " + km + " km");
-                break;
+                double km = convertMilesToKilometers(miles);
+                System.out.println("Converted successfully: " + km);
             }
-            case 2: {
-                System.out.println("Please, enter kilometers");
+            case 2 -> {
+                System.out.println("Enter kilometers: ");
                 double km = sc.nextDouble();
-                double miles = km / CONV_D;
-                System.out.println("Converted successfully - " + miles + " miles");
-                break;
+                double miles = convertKilometersToMiles(km);
+                System.out.println("Converted successfully: " + miles);
             }
-            default: {
-                System.out.println("Invalid choice. You`ve entered bullshit. Try again.");
-            }
+            default -> System.out.println("Invalid choice. You`ve entered bullshit.");
         }
+    }
+
+    private static double convertMilesToKilometers(double miles) {
+        return miles * CONV_D;
+    }
+
+    private static double convertKilometersToMiles(double km) {
+        return km / CONV_D;
     }
 }
