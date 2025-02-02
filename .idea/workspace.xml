@@ -4,18 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b9f725-d6e1-46e0-a951-ed92f6a07245" name="Changes" comment="" />
+    <list default="true" id="35b9f725-d6e1-46e0-a951-ed92f6a07245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/hillel/src/main/java/org/lessons/lesson_8/DataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hillel/src/main/java/org/lessons/lesson_8/DataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hillel/src/main/java/org/lessons/lesson_8/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2s24VoCADbWEtvZ83DD41DaW9L7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,6 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lesson__9",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ksyx7/Documents/GitHub/Java_Hillel_2025",
     "node.js.detected.package.eslint": "true",
@@ -57,6 +70,9 @@
       <option name="presentableId" value="Default" />
       <updated>1737640367881</updated>
       <workItem from="1737640369403" duration="38000" />
+      <workItem from="1737640418934" duration="53000" />
+      <workItem from="1737640483354" duration="6000" />
+      <workItem from="1737640527726" duration="189000" />
     </task>
     <servers />
   </component>
