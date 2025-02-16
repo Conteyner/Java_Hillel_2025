@@ -14,11 +14,12 @@ public class DataHandler {
     public String getAll() {
         StringBuilder sb = new StringBuilder();
         AtomicInteger count = new AtomicInteger(0);
+        sb.append("\nALL NAMES:\n");
         map.forEach((id, name) ->
                 sb.append(String.format("%d) %d, %s%n",
                         count.incrementAndGet(),id, name)
         ));
-        return "\\nALL NAMES:\\n" + sb;
+        return sb.toString();
     }
 
     // Метод формує виведення імені за певним id
