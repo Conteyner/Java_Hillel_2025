@@ -14,17 +14,6 @@ public class ClientEntry {
     private static final int PORT = 1111;
 
     public static void main(String[] args) {
-        try (Socket socket = new Socket(HOST, PORT)) {
-
-            BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
-            output.println("Hello, Server!");
-
-
-            String response = input.readLine();
-            System.out.println("Server response: " + response);
-        } catch (IOException e) {
-        }
-
+            //idk
     }
 }
