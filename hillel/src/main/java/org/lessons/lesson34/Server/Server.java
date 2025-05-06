@@ -30,7 +30,7 @@ public class Server {
             while (true) {
                 Socket socket = serverSocket.accept();
                 var name = "client-" + count.getAndIncrement();
-                var client = new Client();
+                var client = new Client(name, this, socket );
                 clients.put(name, client);
                 pool.submit(client);
                 log.info("server "+name+" connected");
@@ -40,7 +40,7 @@ public class Server {
         }
     }
 
-    protected void removeClient(String name) {
+    public void removeClient(String name) {
         clients.remove(name);
         log.info("removing client {}", name);
     }

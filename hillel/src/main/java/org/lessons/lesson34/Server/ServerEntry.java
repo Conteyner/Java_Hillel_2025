@@ -15,8 +15,4 @@ public class ServerEntry {
             log.error("Failed to start the server", e);
         }
     }
-
-
-
-
 }
