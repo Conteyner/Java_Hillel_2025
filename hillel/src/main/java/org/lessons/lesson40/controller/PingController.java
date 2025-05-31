@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PingController {
     @GetMapping
     public String ping() {
-        return "Pong";
+        return "OK";
     }
 }
 
