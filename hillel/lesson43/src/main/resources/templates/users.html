@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registered Users</title>
+    <link rel="stylesheet" href="http://localhost:8080/css/style.css">
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/users}">Users</a>
+    <form th:action="@{/logout}" method="post" style="display:inline">
+        <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
+        <button type="submit" style="all:unset;cursor:pointer;color:#fff;">
+            Logout
+        </button>
+    </form>
+</nav>
+
+<div class="card">
+    <div class="card-header">Registered Users</div>
+
+    <div class="card-body">
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="u : ${users}">
+                <td th:text="${u.name}"></td>
+                <td th:text="${u.phone}"></td>
+                <td th:text="${u.email}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
